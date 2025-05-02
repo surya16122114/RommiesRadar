@@ -16,7 +16,7 @@ import {
   colors,
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import LoginSideImage from '../assets/Sideimage.jpg';
+import LoginSideImage from '../assets/Image.jpg';
 import theme from '../MaterialUI/theme';
 
 export const Login: React.FC = () => {
@@ -33,7 +33,7 @@ export const Login: React.FC = () => {
     setError('');
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/user/login', {
+      const response = await axios.post('http://localhost:4000/auth/user/login', {
         email,
         password,
       });
