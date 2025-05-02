@@ -1,6 +1,6 @@
 export const fetchUserProfile = async (userId: string): Promise<{ fullName: string } | null> => {
     try {
-      const response = await fetch(`http://localhost:4000/profile/${userId}`);
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/profile/${userId}`);
       const data = await response.json();
       if (response.ok && data.user) {
         const { firstName, lastName } = data.user;

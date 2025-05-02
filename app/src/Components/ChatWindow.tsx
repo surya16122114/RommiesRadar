@@ -71,7 +71,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
 
         if (otherUserId) {
           try {
-            const response = await fetch(`http://localhost:4000/profile/${otherUserId}`);
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/profile/${otherUserId}`);
             const data = await response.json();
             if (data && data.profile) {
               setChatUserName(`${data.profile.userId.firstName} ${data.profile.userId.lastName}`);

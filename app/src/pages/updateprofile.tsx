@@ -46,7 +46,7 @@ const ProfileUpdate: React.FC = () => {
     setError('');
     setSuccess(false);
     try {
-      const response = await axios.patch(`http://localhost:4000/profile/${user.id}`, {
+      const response = await axios.patch(`${process.env.REACT_APP_API_URL}/profile/${user.id}`, {
         firstName,
         lastName,
         DOB,

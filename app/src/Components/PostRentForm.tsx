@@ -77,7 +77,7 @@ const PostRentForm: React.FC<PostRentFormProps> = ({ formData, handleInputChange
     }
 
     try {
-      const response = await axios.post('http://localhost:4000/posts/file', formData, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/posts/file`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 

@@ -60,7 +60,7 @@ const ProfileForm: React.FC = () => {
       const payload = { ...profile, userId };
 
       const response = await axios.post(
-        `http://localhost:4000/profile`, // Backend API endpoint
+        `${process.env.REACT_APP_API_URL}/profile`, // Backend API endpoint
         payload
       );
 

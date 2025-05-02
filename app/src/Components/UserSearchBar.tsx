@@ -41,7 +41,7 @@ const UserSearchBar: React.FC<UserSearchBarProps> = ({
 
     try {
       const response = await fetch(
-        `http://localhost:4000/chats/search?name=${query}`
+        `${process.env.REACT_APP_API_URL}/chats/search?name=${query}`
       );
       const data = await response.json();
 
