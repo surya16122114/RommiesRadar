@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import House from '../assets/moveout.jpg';
-import Navbar from '../components/Navbar.tsx';
+import Navbar from '../components/Navbar';
 import Howitworks from '../components/howitworks';
-import Footer from '../Components/footer';
+import Footer from '../components/footer';
 
 export default function LandingPage() {
   const features = [

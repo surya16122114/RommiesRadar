@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts } from '../redux/Slice/postSlice';
 import { RootState, AppDispatch } from '../redux/store';
-import PostCard from '../Components/PostCard';
+import PostCard from '../components/PostCard';
 import HpNavbar from '../components/HpNavbar';
 import FilterSection from '../components/FiltersSection';
 import '../styles/HomePage.css';
 import { Grid, Typography, Card, CircularProgress, Box, Button, colors } from '@mui/material';
 import { useNavigate } from "react-router-dom";
-import Footer from '../Components/footer';
+import Footer from '../components/footer';
 import { useTranslation } from 'react-i18next';
 
 

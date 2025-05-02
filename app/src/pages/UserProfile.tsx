@@ -5,7 +5,7 @@ import { Card, Typography, Button, Grid, CircularProgress, Box, Avatar, Chip, Al
 import axios from 'axios';
 import HpNavbar from '../components/HpNavbar';
 import { RootState } from '../redux/store';
-import Footer from '../Components/footer';
+import Footer from '../components/footer';
 
 const UserProfile: React.FC = () => {
   const { userId } = useParams<{ userId: string }>();

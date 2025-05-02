@@ -19,8 +19,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import logo from '../assets/friendship.jpeg';
 import SubscribeButton from './SubscribeButton';
-import NavbarHome from './NavbarHome.tsx';
-import Navbarhowitworks from './Navbarhowitworks';
+import NavbarHome from './NavbarHome';
+import NavbarHowitworks from './NavbarHowitworks'; 
 import Inbox from './Inbox';
 import Profile from './Profile';
 import NavbarLogin from './NavbarLogin';
@@ -46,7 +46,7 @@ const HpNavbar: React.FC = () => {
    {!isMobile && (
       <Box sx={{ display: 'flex', gap: '1rem' }}>
          <NavbarHome/>
-         <Navbarhowitworks/>
+         <NavbarHowitworks/>
          {/* <Inbox/>
          <Profile/> */}
          <NavbarLogin/>

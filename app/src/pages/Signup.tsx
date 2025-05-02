@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Box, Grid, Typography, TextField, Button, Alert } from '@mui/material';
-import SideImage from '../assets/Sideimage.jpg';
+import SideImage from "../assets/Image.jpg";
 
 export const Signup: React.FC = () => {
   const navigate = useNavigate();

@@ -17,10 +17,11 @@ import {
   DialogActions,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
-import UserSearchBar from "./UserSearchBar"; // Import SearchBar component
+
 import "../styles/ChatList.css";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
+import UserSearchBar from "./UserSearchBar";
 
 interface Chat {
   chatId: string;
