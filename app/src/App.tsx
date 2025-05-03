@@ -25,7 +25,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import ConfirmationPage from './pages/ConfirmationPage';
 import PaymentPage from './pages/PaymentPage';
-import SubscribeButton from './components/SubscribeButton';
+import SubscribeButton from './components/SubscribeButton'
 
 
 //Initialize Stripe  publishable key
