@@ -5,13 +5,12 @@ import { Button, Link } from '@mui/material';
 import React from 'react';
 import { RootState } from '../redux/store';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearUserDetails } from '../redux/Slice/UserSlice';
-import { logout } from '../redux/Slice/AuthState';
+import { clearUserDetails } from '../redux/Slice/userslice';
+import { logout } from '../redux/Slice/authstate';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 
-const Logout: React.FC = () => {
+const NavbarLogin: React.FC = () => {
     const navigate = useNavigate();
     const currentUserId = useSelector((state: RootState) => state.user.id);
     const dispatch = useDispatch();
@@ -20,14 +19,13 @@ const Logout: React.FC = () => {
         dispatch(logout());
         navigate('/login');
       };
-      const { t } = useTranslation();
 
   return (
     <>
       {/* Logout Button */}
       <Button
             component={Link}
-            // href={`/profile/${currentUserId}`} // Dynamically generate route
+            href={'/login'}
             sx={{
               color: 'Black',
               fontSize: '1.2rem',
@@ -36,10 +34,10 @@ const Logout: React.FC = () => {
               borderBottom: 'none',
               fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'
             }}onClick={handleLogoutSubmit}>
-            {t('logout')}
+                Login / Signup
         </Button>
     </>
   );
 }
 
-export default Logout;
+export default NavbarLogin;

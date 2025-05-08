@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchPosts } from '../redux/Slice/postSlice';
+import { fetchPosts } from '../redux/Slice/postslice';
 import { RootState, AppDispatch } from '../redux/store';
-import PostCard from '../components/PostCard';
-import HpNavbar from '../components/HpNavbar';
-import FilterSection from '../components/FiltersSection';
+import PostCard from '../components/postcard';
+import HpNavbar from '../components/hpnavabar';
+import FilterSection from '../components/filterssection';
 import '../styles/HomePage.css';
 import { Grid, Typography, Card, CircularProgress, Box, Button, colors } from '@mui/material';
 import { useNavigate } from "react-router-dom";

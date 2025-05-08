@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TextField, Button, Grid, MenuItem, Select, FormControl, InputLabel, Box, Typography, SelectChangeEvent } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUserDetails } from '../redux/Slice/UserSlice';
+import { setUserDetails } from '../redux/Slice/userslice';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 

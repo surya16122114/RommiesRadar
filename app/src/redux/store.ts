@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // Use localStorage as default storage
-import authReducer from './Slice/AuthState';
-import userReducer from './Slice/UserSlice';
-import postReducer from './Slice/PostSlice';
+import authReducer from './Slice/authstate';
+import userReducer from './Slice/userslice';
+import postReducer from './Slice/postslice';
 import { combineReducers } from 'redux';
-import chatReducer from './Slice/ChatSlice';
-import subscriptionReducer from './Slice/subscriptionSlice';
+import chatReducer from './Slice/chatslice';
+import subscriptionReducer from './Slice/subscriptionslice';
 
 // Combine all reducers
 const rootReducer = combineReducers({

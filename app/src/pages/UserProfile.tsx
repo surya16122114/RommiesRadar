@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Card, Typography, Button, Grid, CircularProgress, Box, Avatar, Chip, Alert } from '@mui/material';
 import axios from 'axios';
-import HpNavbar from '../components/HpNavbar';
+import HpNavbar from '../components/hpnavabar';
 import { RootState } from '../redux/store';
 import Footer from '../components/footer';
 

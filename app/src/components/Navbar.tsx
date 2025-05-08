@@ -13,17 +13,17 @@ import {
 } from '@mui/material';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import { clearUserDetails } from '../redux/Slice/UserSlice';
-import { logout } from '../redux/Slice/AuthState';
+import { clearUserDetails } from '../redux/Slice/userslice';
+import { logout } from '../redux/Slice/authstate';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import logo from '../assets/friendship.jpeg';
-import SubscribeButton from './SubscribeButton';
-import NavbarHome from './NavbarHome';
-import NavbarHowitworks from './NavbarHowitworks'; 
-import Inbox from './Inbox';
-import Profile from './Profile';
-import NavbarLogin from './NavbarLogin';
+import SubscribeButton from './subscribebutton';
+import NavbarHome from './navbarhome';
+import NavbarHowitworks from './navabarhowitworks'; 
+import Inbox from './inbox';
+import Profile from './profile';
+import NavbarLogin from './navbarlogin';
 
 const HpNavbar: React.FC = () => {
   const location = useLocation();

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
 import { Avatar, Box, Grid, Paper, Typography, Button } from '@mui/material';
-import HpNavbar from '../components/HpNavbar';
+import HpNavbar from '../components/hpnavabar';
 import '../styles/profilepage.css';
 import { useNavigate } from 'react-router-dom';
 

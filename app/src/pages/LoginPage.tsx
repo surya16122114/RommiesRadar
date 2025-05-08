@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { loginFailure, loginSuccess } from '../redux/Slice/AuthState';
-import { setUserDetails } from '../redux/Slice/UserSlice';
+import { loginFailure, loginSuccess } from '../redux/Slice/authstate';
+import { setUserDetails } from '../redux/Slice/userslice';
 import {
   Box,
   TextField,
@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import LoginSideImage from '../assets/Image.jpg';
-import theme from '../MaterialUI/theme';
+import theme from '../materialui/theme';
 
 export const Login: React.FC = () => {
   const navigate = useNavigate();

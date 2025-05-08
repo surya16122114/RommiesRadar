@@ -2,16 +2,18 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Box } from "@mui/material";
 import { io } from "socket.io-client";
-import { setChats, setCurrentChat, setMessages, setNewMessage, addDeletedMessage } from "../redux/Slice/ChatSlice";
-import ChatList from "../components/ChatList";
-import ChatWindow from "../components/ChatWindow";
-import HpNavbar from "../components/HpNavbar";
+import { setChats, setCurrentChat, setMessages, setNewMessage, addDeletedMessage } from "../redux/Slice/chatslice";
+import ChatList from "../components/chatlist";
+import ChatWindow from "../components/chatwindow";
+import HpNavbar from "../components/hpnavabar";
 import "../styles/ChatPage.css";
 import { AppDispatch, RootState } from "../redux/store";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const socket = io(`${process.env.REACT_APP_API_URL}`);
+
+
+const socket = io(process.env.REACT_APP_API_URL);
 
 const ChatPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();

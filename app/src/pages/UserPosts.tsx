@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Box, CircularProgress, Grid, Typography, Alert } from '@mui/material';
-import PostCard from '../components/PostCard'; // Import the PostCard component
-import HpNavbar from '../components/HpNavbar'; // Import the Navbar component
+import PostCard from '../components/postcard'; // Import the PostCard component
+import HpNavbar from '../components/hpnavabar'; // Import the Navbar component
 import axios from 'axios';
 import { RootState } from '../redux/store';
 import { useSelector } from 'react-redux';
