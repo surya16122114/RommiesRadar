@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorkerRegistration from './serviceworkerregistration';
 
 
 

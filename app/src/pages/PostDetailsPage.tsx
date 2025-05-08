@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Box, Typography, Card, CardMedia, Grid, Avatar, Chip, Button, CircularProgress } from '@mui/material';
-import HpNavbar from '../components/HpNavbar';
+import HpNavbar from '../components/hpnavabar';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';

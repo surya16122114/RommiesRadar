@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography, Slider, Chip, Button, TextField } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { fetchPosts } from '../redux/Slice/postSlice';
+import { fetchPosts } from '../redux/Slice/postslice';
 import { AppDispatch } from '../redux/store';
 import '../styles/FilterSection.css';
 import { t } from 'i18next';

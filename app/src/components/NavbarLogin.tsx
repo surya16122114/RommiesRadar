@@ -5,8 +5,8 @@ import { Button, Link } from '@mui/material';
 import React from 'react';
 import { RootState } from '../redux/store';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearUserDetails } from '../redux/Slice/UserSlice';
-import { logout } from '../redux/Slice/AuthState';
+import { clearUserDetails } from '../redux/Slice/userslice';
+import { logout } from '../redux/Slice/authstate';
 import { useNavigate } from 'react-router-dom';
 
 
